@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .action-box {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .view-sales {
+            background-color: #4caf50; /* Green */
+            color: white;
+        }
+        .low-stock-alert {
+            background-color: #ff9800; /* Orange */
+            color: white;
+        }
+        .add-remove-stock {
+            background-color: #2196f3; /* Blue */
+            color: white;
+        }
+        .generate-report {
+            background-color: #9c27b0; /* Purple */
+            color: white;
+        }
+        .optimize-storage {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+        .store-manager {
+            background-color: #00bcd4; /* Cyan */
+            color: white;
+        }
+        .available-button {
+            background-color: #28a745; /* Bright green */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Grocery Store Management System</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity in Demand</th>
+                    <th>Time of Request</th>
+                    <th>Available</th> <!-- New column for availability -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aashirvaad Chakki Atta 5kg</td>
+                    <td>50</td>
+                    <td>Wed, 11 Nov 2020 17:37:22 GMT</td>
+                    <td><button class="available-button">Available</button></td> <!-- Button -->
+                </tr>
+                <tr>
+                    <td>Garnier Men Acne Face Wash 100g</td>
+                    <td>40</td>
+                    <td>Wed, 11 Nov 2020 17:37:37 GMT</td>
+                    <td><button class="available-button">Available</button></td> <!-- Button -->
+                </tr>
+                <tr>
+                    <td>Gubb Round Comb (Pack of 2)</td>
+                    <td>30</td>
+                    <td>Wed, 11 Nov 2020 17:48:44 GMT</td>
+                    <td><button class="available-button">Available</button></td> <!-- Button -->
+                </tr>
+                <tr>
+                    <td>The Whole Truth Coco Protein Bar 67g</td>
+                    <td>100</td>
+                    <td>Sat, 14 Nov 2020 17:05:33 GMT</td>
+                    <td><button class="available-button">Available</button></td> <!-- Button -->
+                </tr>
+                <tr>
+                    <td>Nescafe Coffee 50g</td>
+                    <td>20</td>
+                    <td>Sat, 14 Nov 2020 17:07:04 GMT</td>
+                    <td><button class="available-button">Available</button></td> <!-- Button -->
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <div class="actions">
+            <div class="action-box view-sales">
+                <h3>View Sales</h3>
+            </div>
+            <div class="action-box low-stock-alert">
+                <h3>Low Stock Alert</h3>
+            </div>
+            <div class="action-box add-remove-stock">
+                <h3>Add/Remove Stock</h3>
+            </div>
+            <div class="action-box generate-report">
+                <h3>Generate Inventory Report</h3>
+            </div>
+            <div class="action-box optimize-storage">
+                <h3>Optimize Storage Space</h3>
+            </div>
+            <div class="action-box store-manager">
+                <h3>Store Manager</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
